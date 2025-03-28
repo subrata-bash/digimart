@@ -5,8 +5,9 @@
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
+    <h1 class="mb-4">Admin Forgot Password</h1>
 
-    <form method="POST" action="{{ route('password.email') }}">
+    <form method="POST" action="{{ route('admin.password.email') }}">
         @csrf
 
         <!-- Email Address -->
